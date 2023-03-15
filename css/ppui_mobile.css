@@ -1,0 +1,32 @@
+.gnb {
+    width: 100%;
+}
+
+.gnb>.nav-links {display: none;}
+
+/* 레이아웃 정렬 */
+.container{width: calc(100% - 20px); max-width: 100%; margin: 0 auto; display: flex; flex-direction: column;}
+.site-content{display: flex; flex-direction: column; justify-content: space-between; transition: 0.3s;}
+.header-logo{text-align: center;}
+
+/* site-header */
+.site-header div{display: flex; justify-content: space-between; transition: 0.3s;}
+.burger {display: flex; width: 100%; text-align: center; flex-direction: row; justify-content: center; transition: 1s; flex-wrap: wrap;}
+.burger li{margin: 0 10px;}
+.burger li a { height: 100%; justify-content: center;}
+
+/* body */
+.main {width: calc(100% - 20px); display: flex; flex-direction: column;}
+
+.board-general {display: none;}
+.board {width: calc(100% - 20px);}
+.board-mini {display: flex; width: calc(100% - 20px);}
+.page_num {max-width: 100%;}
+input[name=search]{min-width: 30px;max-width: calc(100% - 50px);}
+
+/* footer */
+/* 메인 CSS 파일과 같아서 생략하였음 */
+
+/* layer popup */
+.layer{display: none; position:fixed; left: 0;right: 0;top: 0;bottom: 0; background: rgba(0,0,0,0.5);  transition: 0.3s;}
+.layer>div{background: #fff; width: 600px; padding: 30px; margin: 150px auto; transition: 0.3s; border-radius: 10px;}
